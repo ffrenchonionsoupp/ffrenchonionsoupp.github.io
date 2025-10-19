@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* Site background and font selection */
+html {
+    background: #EEAECA;
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    font-family: 'Helvetica';
+}
+/* H1 information */
+header > h1 {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 500;
+    padding: 10px 15px;
+    background-color: rgba(253, 183, 204, 0.5);
+}
+/* H2 information */
+header > h2 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 200;
+    padding: 10px 15px;
+
+}
+/* Navigation information */
+nav {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    padding: 0.1;
+    margin: 0.1;
+}
+nav ul li a {
+    color: inherit;
+    text-decoration: none
+}
+nav ul li a:hover {
+    color: rgba(66, 135, 245);
+    background-color: rgba(140, 102, 148, .2);
+    text-decoration: underline;
+}
+/* Main sections information */
+section#about,
+section#projects,
+section#contact {
+    padding: 20px;
+    margin: 20px 0;
+    border-style: solid;
+    box-shadow: 0 3px 8px rgba(78, 65, 92, 1);
+    background-color: rgba(230, 238, 255, .6);
+}
+section#about:hover,
+section#projects:hover,
+section#contact:hover {
+    padding: 20px;
+    margin: 20px 0;
+    border-style: solid;
+    box-shadow: 0 3px 8px rgba(78, 65, 92, 1);
+    background-color: rgba(230, 238, 255, 1);
+}
+/* Footer information */
+footer {
+    font-family: 'Beth Ellen';
+    font-size: smaller;
+    text-align: center;
+    color: rgb(90, 103, 158);
+    background-color: rgba(230, 210, 250, .5);
+}
