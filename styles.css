@@ -36,7 +36,8 @@ nav ul{
 }
 nav ul li a {
     color: inherit;
-    text-decoration: none
+    text-decoration: none;
+    transition: color 0.3s;
 }
 nav ul li a:hover {
     color: rgba(66, 135, 245);
@@ -52,6 +53,11 @@ section#contact {
     border-style: solid;
     box-shadow: 0 3px 8px rgba(78, 65, 92, 1);
     background-color: rgba(230, 238, 255, .6);
+    /* defining transition for background color and zoom changes */
+    transition: background-color 0.3s;
+    transition: transform 0.3s ease-out;
+    /* initial state w/ no zoom */
+    transform: scale(1);
 }
 section#about:hover,
 section#projects:hover,
@@ -61,6 +67,30 @@ section#contact:hover {
     border-style: solid;
     box-shadow: 0 3px 8px rgba(78, 65, 92, 1);
     background-color: rgba(230, 238, 255, 1);
+    /* zoom in effect*/
+    transform: scale(1.02);
+}
+/* Project's table information */
+section#projects th,
+section#projects td {
+    border: 2px solid black;
+    padding: 12px;
+    text-align: left;
+}
+section#projects thead {
+    background-color: #444;
+    color: white;
+}
+section#projects tfoot td {
+    padding: 10px;
+}
+/* Center the table inside the projects section */
+section#projects table {
+    margin: 0 auto; /* centers the table horizontally */
+    width: 100%;
+}
+section#projects caption {
+    text-align: center;
 }
 /* Footer information */
 footer {
