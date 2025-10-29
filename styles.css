@@ -92,6 +92,59 @@ section#projects table {
 section#projects caption {
     text-align: center;
 }
+/* Main content area for flex */
+main {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px
+}
+/* Navigation menu content area for flex */
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+/* Contact form content area for flex */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+/* Form styling */
+input,
+textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid rgba(140, 102, 148, 1);
+    transition: border-color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+input:focus,
+input:hover,
+textarea:focus,
+textarea:hover {
+    border-color: rgb(53, 53, 172);
+    background-color: rgba(84, 110, 196, 0.2);
+}
+input:invalid {
+    color: red;
+    border: 2px solid red;
+    box-shadow: 0 0 5px red;
+}
+button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #f88aba;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+    background-color: #d65e92;
+}
 /* Footer information */
 footer {
     font-family: 'Beth Ellen';
@@ -99,4 +152,39 @@ footer {
     text-align: center;
     color: rgb(90, 103, 158);
     background-color: rgba(230, 210, 250, .5);
+}
+/* Responsive Design */
+/* Phone */
+@media (max-width: 600px) {
+  main {
+    flex-direction: column;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  form {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+/* Tablet */
+@media (min-width: 601px) and (max-width: 1024px) {
+  main {
+    flex-direction: column;
+  }
+  nav ul {
+    flex-direction: row;
+    gap: 15px;
+  }
+}
+/* Desktop */
+@media (min-width: 1025px) {
+  main {
+    flex-direction: column;
+  }
+  nav ul {
+    flex-direction: row;
+    gap: 20px;
+  }
 }
