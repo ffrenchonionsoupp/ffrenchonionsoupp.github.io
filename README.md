@@ -2,7 +2,7 @@
 
 This website is the composition of my course project for SDC260, Web Interface Design.
 
-![XAMPP Website Deployment Screenshot](ffreenshonionsoupp.github.io/screenshots/Screenshot 2025-11-09 140753.png)
+![XAMPP Website Deployment Screenshot](https://ffrenchonionsoupp.github.io/screenshots/deployment.png)
 
 ## Description
 
